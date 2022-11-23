@@ -1,0 +1,32 @@
+{
+  "name": "qa_task_api",
+  "version": "1.0.0",
+  "description": "QA interview assignment to create automation test script for api",
+  "main": "index.js",
+  "scripts": {
+    "triggerAllTests-headless": "npx cypress run",
+    "triggerAllTests-headed": "npx cypress run --headed",
+    "mochawesome-merge": "npx mochawesome-merge cypress/results/mochawesome/*.json > mochawesome.json && npx marge mochawesome.json",
+    "delete-mochawesome-report": "rm -rf mochawesome-report/* || true"
+  },
+  "author": "Gaurav Sharma",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^11.1.0",
+    "cypress-multi-reporters": "^1.6.1",
+    "mocha-junit-reporter": "^2.2.0",
+    "mochawesome": "^7.1.3",
+    "mochawesome-merge": "^4.2.1",
+    "mochawesome-report-generator": "^6.2.0"
+  },
+  "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^14.0.0",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.1.5",
+    "chai-json-schema": "^1.5.1"
+  },
+  "cypress-cucumber-preprocessor": {
+    "step_definitions": "cypress/support/step_definitions/",
+    "filterSpecs": true,
+    "omitFiltered": true
+  }
+}
