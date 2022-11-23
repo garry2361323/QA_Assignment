@@ -6,6 +6,7 @@ This framework uses Cypress v11 for testing with mochawesome for reporting..
  - [e2e](https://github.com/garry2361323/QA_Assignment/tree/main/cypress/e2e/feature) contains all the feature files
  - [support/<feature_file_name>](https://github.com/garry2361323/QA_Assignment/tree/main/cypress/support) contains step definations.
  - [fixtures/latest_GET_schema.json](https://github.com/garry2361323/QA_Assignment/tree/main/cypress/fixtures) contains external pieces of static data that can be used by the tests.
+ - [reporter-config.json](https://github.com/garry2361323/QA_Assignment/blob/main/reporter-config.json) contains config values to customize mochawesome reports behaviour.
 
 ### How to run the tests
 
@@ -37,6 +38,8 @@ retries: 1
 ### Reports
 
 For better illustration on the testcases, mochawesome reports has been integrated.
+
+
 
 <img width="955" alt="image" src="https://user-images.githubusercontent.com/19347472/203657392-e2ecab7e-32b0-4c54-a394-1a3e66a643c5.png">
 
