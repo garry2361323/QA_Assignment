@@ -1,0 +1,40 @@
+{
+    "title": "Test Schema v1",
+     "type": "object",
+   "properties": {
+     "success": {
+       "type": "boolean"
+     },
+     "timestamp": {
+       "type": "integer"
+     },
+     "base": {
+       "type": "string"
+     },
+     "date": {
+       "type": "string"
+     },
+     "rates": {
+       "type": "object",
+       "properties": {
+         "GBP": {
+           "type": "number"
+         },
+         "USD": {
+           "type": "integer"
+         }
+       },
+       "required": [
+         "GBP",
+         "USD"
+       ]
+     }
+   },
+   "required": [
+     "success",
+     "timestamp",
+     "base",
+     "date",
+     "ratess"
+   ]
+ }
