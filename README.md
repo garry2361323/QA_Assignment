@@ -1,6 +1,6 @@
 # QA developer task
 
-This framework uses Cypress v11 for testing with mochawesome for reporting..
+This framework uses Cypress v11 for testing with BDD approach and mochawesome plugin for reporting.
 
  - [mochawesome-report](https://github.com/garry2361323/QA_Assignment/tree/main/mochawesome-report) contains mochawesome report i.e. mochawesome.html
  - [e2e](https://github.com/garry2361323/QA_Assignment/tree/main/cypress/e2e/feature) contains all the feature files
